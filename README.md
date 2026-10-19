@@ -1,9 +1,8 @@
-go to: https://saurabh-annadate.github.io/encoren2o/
+Go to: https://saurabh-annadate.github.io/encoren2o/
 
 # ENCORE project website
 
-A static website for the ENCORE project at the Mace Head Atmospheric Research Station (University of Galway).
-Plain HTML, CSS and a little JavaScript. No build step, so it runs as-is on GitHub Pages.
+A static website for the ENCORE project at the University of Galway, funded by the EPA Ireland.
 
 ```
 index.html            the page
