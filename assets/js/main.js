@@ -19,6 +19,15 @@ document.documentElement.classList.remove('no-js');
     if (e.target.tagName === 'A') { links.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); }
   });
 
+  // "#top" links: the nav is fixed, so scroll the window explicitly
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+
   // Fade sections in as they scroll into view
   var items = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
